@@ -1,0 +1,16 @@
+.time {
+    text-align: right;
+}
+
+.hms {
+    font-size: 25pt;
+    font-weight: 200;
+}
+
+.ampm {
+    font-size: 10pt;
+}
+
+.date {
+    font-size: 10pt;
+}

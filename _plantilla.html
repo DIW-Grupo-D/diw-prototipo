@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plantilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <header class="bg-light">
+        <section class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="column col-sm-12 col-md-4">
+                    <a href="index.html"><img src="images/logo.png" alt="Avaluat" width="220"></a>
+                </div>
+                <!-- Header menu -->
+                <section class="column col-sm-12 col-md-8">
+                    <!-- CLock -->
+                    <div class="">
+                        <div class="container time d-none d-md-block">
+                            <span class="hms"></span>
+                            <span class="ampm"></span><br>
+                            <span class="date"></span>
+                        </div>
+                        <!-- Navbar -->
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Activado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Desactivado</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Desplegable
+                        </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Usuario</a></li>
+                                    <li><a class="dropdown-item" href="#">Preferencias</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html">Salir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </section>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <!-- Aside menu -->
+            <aside class="col-sm-3">
+                <div class="flex-shrink-0 p-3 bg-white">
+                    <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                        <svg class="bi me-2" width="30" height="24">
+                     <use xlink:href="#bootstrap"></use>
+                  </svg>
+                        <span class="fs-5 fw-semibold">Administrar</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                        Buscar
+                     </button>
+                            <div class="collapse show" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="familias.html" class="link-dark rounded">Familias profesionales</a></li>
+                                    <li><a href="ciclosformativos.html" class="link-dark rounded">Ciclos formativos</a></li>
+                                    <li><a href="modulos.html" class="link-dark rounded">Módulos</a></li>
+                                    <li><a href="resultadosaprendizaje.html" class="link-dark rounded">Resultados de aprendizaje</a></li>
+                                    <li><a href="criteriosevaluacion.html" class="link-dark rounded">Criterios de evaluación</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                        Crear
+                     </button>
+                            <div class="collapse show" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="familia_form.html" class="link-dark rounded">Nueva Familia profesional</a></li>
+                                    <li><a href="cicloformativo_form.html" class="link-dark rounded">Nuevo Ciclo formativo</a></li>
+                                    <li><a href="modulo_form.html" class="link-dark rounded">Nuevo Módulo</a></li>
+                                    <li><a href="resultadoaprendizaje_form.html" class="link-dark rounded">Nuevo RA</a></li>
+                                    <li><a href="criterioevaluacion_form.html" class="link-dark rounded">Nuevo CE</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                        Otros
+                     </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark rounded">Otras opciones</a></li>
+                                    <li><a href="#" class="link-dark rounded">Otras opciones</a></li>
+                                    <li><a href="#" class="link-dark rounded">Otras opciones</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main class="col-sm-9">
+                <div class="container">
+                    <!-- Breadcrumbs -->
+                    <div class="row p-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Ciclos Formativos</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- Search bar -->
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 d-flex justify-content-end">
+                            <div class="dropdown text-end">
+                                <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Mostrar:
+                        </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">9</a></li>
+                                    <li><a class="dropdown-item" href="#">18</a></li>
+                                    <li><a class="dropdown-item" href="#">36</a></li>
+                                    <li><a class="dropdown-item" href="#">72</a></li>
+                                    <li><a class="dropdown-item" href="#">Todo</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown text-end">
+                                <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Filtrar:
+                        </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Nada</a></li>
+                                    <li><a class="dropdown-item" href="#">por familia profesional profesional</a></li>
+                                    <li><a class="dropdown-item" href="#">por ciclo formativo</a></li>
+                                    <li><a class="dropdown-item" href="#">por curso</a></li>
+                                    <li><a class="dropdown-item" href="#">por módulo</a></li>
+                                    <li><a class="dropdown-item" href="#">por resultado de aprendizaje</a></li>
+                                    <li><a class="dropdown-item" href="#">por criterio de aprendizaje</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Desvinculados</a></li>
+                                    <li><a class="dropdown-item" href="#">Desvinculados (Sin padre)</a></li>
+                                    <li><a class="dropdown-item" href="#">Desvinculados (Sin hijo)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-8">
+                            <form class="input-group d-flex justify-content-end" role="search">
+                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                                <button type="button" class="btn btn-outline-primary">search</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Elements -->
+                    <section class="row py-3">
+
+                        <!-- Title -->
+                        <div class="row">
+                            <div class="col-11">
+                                <h4 class="h4">Título ejemplo</h4>
+                            </div>
+                            <div class="col-1">
+                                <a href="cicloformativo_form.html"><button type="button" class="btn btn-primary btn-block mx-1">Crear</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Single element -->
+
+                    </section>
+
+                    <!-- Pagination -->
+                    <div class="row">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link disabled" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link disabled" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+            </main>
+            </div>
+    </section>
+
+    <footer class="">
+        <section class="container">
+            <div class="col text-center">
+                <br>
+                <img src="https://portal.edu.gva.es/03013224/wp-content/uploads/sites/231/2022/03/logo_direccion-1.png" alt="Info Severo Ochoa" width="350">
+            </div>
+        </section>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Script -->
+    <script src="script/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+
+</html>
